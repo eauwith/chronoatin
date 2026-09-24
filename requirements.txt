@@ -1,0 +1,13 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+statsmodels>=0.14
+matplotlib>=3.7
+
+# Optional: real-data ingestion path (see DESIGN.md §7).
+# Not needed for any synthetic experiment in experiments/.
+# anndata>=0.10
+# scanpy>=1.10
+# cooler>=0.9          # .mcool / .cool Hi-C matrices
+# cooltools>=0.7       # eigendecomposition, insulation, expected
