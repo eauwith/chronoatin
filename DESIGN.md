@@ -364,6 +364,21 @@ scaffold with no re-keying — the same bins carry compartment, insulation and r
 timing. This is why the model is methylation-anchored with conformation derived, rather
 than the reverse.
 
+Those keys are not incidental: they are produced by `mapWindows.sh` in
+[`RheMacAge`](https://github.com/elisabethgoldman/RheMacAge), the upstream RRBS
+pipeline (Bismark → 1 kb windowing → coverage filtering → elastic-net clock).
+`scaffold.py` adopts that binning deliberately so the two join without translation.
+
+**One caveat this imposes on H2b.** The real feature set is coverage-conditioned
+before it ever reaches analysis: windows are kept only where covered in ≥90% of
+samples, then imputed, then filtered at <5× median coverage and at >90% / <10%
+median methylation. Sites with extreme or unstable methylation are therefore
+already removed. Since H2b is a claim about *variance*, this is a live threat —
+the filtering truncates exactly the tail the hypothesis is about, and it will bias
+the age-on-dispersion coefficient toward zero. The virtual RRBS assay should model
+this filtering explicitly rather than sampling uniformly, or the simulated and real
+dispersion estimates are not comparable quantities.
+
 **Public conformation data** for tissue-specific compartment/insulation features:
 ENCODE and 4DN Hi-C, plus scATAC atlases. Human for H1 (driver labels are human);
 macaque where an ortholog mapping exists, via the liftover already implemented in
