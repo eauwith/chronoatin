@@ -1,4 +1,4 @@
-# Chronatin
+# Chromatin
 
 An in-silico experimental environment for single-cell chromatin over the lifespan.
 

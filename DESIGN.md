@@ -1,4 +1,4 @@
-# Chronatin — design document
+# Chromatin — design document
 
 An in-silico experimental environment for testing whether chromatin conformation
 varies systematically by tissue in a way that predicts cancer driver acquisition
@@ -36,7 +36,7 @@ about different terms. The interesting, testable claim is the decomposition:
 
 > observed driver rank ≈ f(mutation supply | conformation) ⊗ g(selection coefficient | conformation)
 
-Chronatin exists to fit that decomposition per tissue, with the two terms separately
+This environment exists to fit that decomposition per tissue, with the two terms separately
 identified, and to ask whether the tissue-matched conformation carries information the
 tissue-swapped conformation does not.
 
