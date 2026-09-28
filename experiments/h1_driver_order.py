@@ -53,7 +53,7 @@ def main(seed: int = 3) -> None:
           f"significant in {(p_perm < 0.05).sum()}/8 seeds")
 
     if (p_swap < 0.05).sum() < 7:
-        print("\n  VERDICT: the result is SEED-UNSTABLE at this panel size. The model")
+        print("\n  verdict: the result is seed-unstable at this panel size. The model")
         print("  reliably beats label permutation -- it has learned something -- but")
         print("  whether it beats tissue-swap depends on the draw. Reporting a single")
         print("  seed here would be reporting noise in either direction.")
