@@ -1,4 +1,4 @@
-"""E2 -- H2: how does chromatin change with age, in the absence of cancer?
+"""E2 -- H2: how does chromatin change with age in the absence of cancer?
 
 Primary hypothesis is H2b: cells drift APART with age faster than they drift.
 Age is fitted on both the location and the scale.
@@ -51,7 +51,7 @@ def main(seed: int = 11, n_cells: int = 14) -> None:
     print("  H2b predicts the scale column carries more signal than the mean column.")
 
     print("\n--- the pseudo-replication trap ---")
-    print("  Cells are not independent. Treating them as such is the most common")
+    print("  Cells are not independent. Treating them as such is most common")
     print("  way single-cell aging findings fail to replicate.")
     print(f"  {'feature':<18}{'donor-level p':<16}{'cell-level p':<16}{'inflation'}")
     for f in ["comp_strength", "meth_entropy", "insulation_sd"]:
