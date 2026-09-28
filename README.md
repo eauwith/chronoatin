@@ -1,6 +1,4 @@
-# Chronatin
-
-An in-silico experimental environment for single-cell chromatin over the lifespan.
+# Chrono-atin - an in-silico experimental environment for examining single-cell chromatin over time
 
 It exists to answer two questions that are hard to answer at the bench, and one that
 cannot be answered at the bench at all:
